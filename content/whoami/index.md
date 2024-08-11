@@ -14,7 +14,7 @@ title = "Who am I ?"
   <h2>Présentation</h2>
   <div class="whoami-pres-container">
     <div>
-      {{ image(url="https://github.com/voluxyy/voluxyy.github.io/blob/main/static/whoami/profile.jpeg?raw=true", alt="Profile" no_hover=true) }}
+      {{ image(url="https://github.com/voluxyy/portfolio/blob/main/static/whoami/profile.jpeg?raw=true", alt="Profile" no_hover=true) }}
     </div>
     <div>
       <p align="center">Bonjour 🙂</p>
@@ -41,7 +41,7 @@ title = "Who am I ?"
           <p class="whoami-exp-date">04/12/2023 au 23/02/2024</p>
         </div>
         <div class="whoami-exp-description">
-          <p>Lors de la deuxième année à Ynov, nous devons faire un stage pour valider l'année. J'ai alors proposé de faire à nouveau un stage avec Bashroom qu'ils ont acceptés. Ce deuxième stage m'a permis d'être un peu plus intégré et de travailler sur des tâches en collaboration avec d'autres stagiaires.</p>
+          <p>Lors de la deuxième année à Ynov, nous devons faire un stage pour valider l'année. J'ai alors proposé de faire à nouveau un stage avec Bashroom qui a été accepté. Ce deuxième stage m'a permis d'être un peu plus intégré et de travailler sur des tâches en collaboration avec d'autres stagiaires.</p>
         </div>
       </article>
       <article>
@@ -50,8 +50,8 @@ title = "Who am I ?"
           <p class="whoami-exp-date">03/05/2024 au 15/08/2024</p>
         </div>
         <div class="whoami-exp-description">
-          <p >A la fin de mon deuxième stage, j'ai proposé à Bashroom de me prendre en CDD à temps partiel avec les cours le matin. Proposition qui s'est vu refusé mais qui m'a permis de décrocher un contrat quelques mois plus tard.</p>
-          <p>Ce contrat est un privilège qui me permet, au moment au j'écris ceci, de continuer à développer mes compétences et de travailler en collaboration avec toute l'équipe Bashroom.</p>
+          <p >A la fin de mon deuxième stage, j'ai proposé à Bashroom de me prendre en CDD à temps partiel avec les cours le matin. Proposition, qui s'est vu, refusé mais qui m'a permis de décrocher un contrat quelques mois plus tard.</p>
+          <p>Ce contrat est un privilège qui me permet, au moment au j'écris ceci, de continuer à développer mes compétences et de travailler en collaboration avec toute l'équipe Bashroom sur des projets qui nécessitent beaucoup plus de responsabilité.</p>
         </div>
       </article>
   </section>

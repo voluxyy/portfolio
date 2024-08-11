@@ -13,7 +13,7 @@ title = "Who am I?"
   <h2>Presentation</h2>
   <div class="whoami-pres-container">
     <div>
-      {{ image(url="https://github.com/voluxyy/voluxyy.github.io/blob/main/static/whoami/profile.jpeg?raw=true", alt="Profile" no_hover=true) }}
+      {{ image(url="https://github.com/voluxyy/portfolio/blob/main/static/whoami/profile.jpeg?raw=true", alt="Profile" no_hover=true) }}
     </div>
     <div>
       <p align="center">Hello 🙂</p>

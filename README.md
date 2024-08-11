@@ -1,11 +1,7 @@
 # Portfolio
 
-This project is my portfolio of my stage to validate my second year at Ynov Campus Toulouse. It is made using [zola](https://www.getzola.org/). It is a framework to make static site very easily.\
-The website at this url : [voluxyy.github.io](https://voluxyy.github.io)
-
-## Table of contents
-
-[[_TOC_]]
+This project is my portfolio of my stage to validate my second year at Ynov Campus Toulouse. It is made using [zola](https://www.getzola.org/). It is a framework to make static website very easily.\
+The website is reachable at this url: [voluxyy.github.io/portfolio](https://voluxyy.github.io/portfolio)
 
 ## Information
 

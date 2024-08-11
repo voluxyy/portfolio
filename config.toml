@@ -1,5 +1,5 @@
 title = "Anaël Lasserre"
-base_url = "https://voluxyy.github.io"
+base_url = "https://voluxyy.github.io/portfolio"
 description = "Modern, pretty, and clean theme."
 
 compile_sass = true
@@ -41,11 +41,12 @@ primary_color_dark_alpha = "rgba(0, 96, 0, 0.2)"
 # Only one emoji is being rendered, everything else is truncated.
 # emoji_favicon = "🦆🪶"
 # URL to website's issue tracker
-issues_url = "https://github.com/voluxyy/voluxyy.github.io/issues"
+issues_url = "https://github.com/voluxyy/portfolio/issues"
 # URL to website's source code
-source_url = "https://github.com/voluxyy/voluxyy.github.io"
+source_url = "https://github.com/voluxyy/portfolio"
 # If you are using Sass it will be generated there automatically.
 stylesheets = [
+  "styles.css",
   "home.css",
   "whoami.css",
   "bashroom.css",
