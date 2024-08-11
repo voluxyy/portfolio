@@ -20,16 +20,16 @@ jobs:
         curl -L https://github.com/getzola/zola/releases/download/v0.15.2/zola-v0.15.2-x86_64-unknown-linux-gnu.tar.gz | tar -xz -C /usr/local/bin
 
     - name: Build the site
-      run: zola build --output-dir build
+      run: zola build
 
     - name: Show generated files
-      run: ls -R build
+      run: ls -R public
 
     - name: Show the content of style.css
-      run: cat build/style.css
+      run: cat public/style.css
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./build
+        publish_dir: ./public
