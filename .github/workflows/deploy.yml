@@ -23,10 +23,10 @@ jobs:
       run: zola build --output-dir build
 
     - name: Show generated files
-      run: ls -R public
+      run: ls -R build
 
     - name: Show the content of style.css
-      run: cat public/style.css
+      run: cat build/style.css
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
