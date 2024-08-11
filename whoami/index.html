@@ -1,0 +1,75 @@
+<!doctype html><html lang=fr xmlns=http://www.w3.org/1999/xhtml><head><meta charset=UTF-8><meta content="Modern, pretty, and clean theme." name=description><meta content="width=device-width,initial-scale=1" name=viewport><meta content=#008000 name=theme-color><meta content=#006000 media=(prefers-color-scheme:dark) name=theme-color><title>Who am I ? - Anaël Lasserre</title><link href=https://voluxyy.github.io/portfolio/whoami/ rel=canonical><link href=https://vmst.io/@daudix rel=me><link href=https://voluxyy.github.io/portfolio/favicon.png rel=icon type=image/png><link href=https://voluxyy.github.io/portfolio/apple-touch-icon.png rel=apple-touch-icon sizes=180x180 type=image/png><link href=https://voluxyy.github.io/portfolio/style.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/styles.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/home.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/whoami.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/bashroom.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/stage.css rel=stylesheet><style>:root {
+			--primary-color: #008000;
+			--primary-color-alpha: rgba(0, 128, 0, 0.2);
+		}
+			@media (prefers-color-scheme: dark) {
+				:root {
+					--primary-color: #006000;
+					--primary-color-alpha: rgba(0, 96, 0, 0.2);
+				}
+			}</style><script>document.addEventListener("DOMContentLoaded", function () {
+		let blocks = document.querySelectorAll("pre[class^='language-']");
+
+		blocks.forEach((block) => {
+			if (navigator.clipboard) {
+				// Code block header title
+				let title = document.createElement("span");
+				let lang = block.getAttribute("data-lang");
+				title.innerHTML = lang;
+
+				// Copy button icon
+				let icon = document.createElement("i");
+				icon.classList.add("icon");
+
+				// Copy button
+				let button = document.createElement("button");
+				button.setAttribute("title", "Copy code")
+				button.appendChild(icon);
+
+				// Code block header
+				let header = document.createElement("div");
+				header.classList.add("header");
+				header.appendChild(button);
+				header.appendChild(title);
+
+				// Container that holds header and the code block itself
+				let container = document.createElement("div");
+				container.classList.add("pre-container");
+				container.appendChild(header);
+
+				// Move code block into the container
+				block.parentNode.insertBefore(container, block);
+				container.appendChild(block);
+
+				button.addEventListener("click", async () => {
+					await copyCode(block, header);
+				});
+			}
+		});
+
+		async function copyCode(block, header) {
+			let code = block.querySelector("code");
+			let text = code.innerText;
+
+			await navigator.clipboard.writeText(text);
+
+			header.classList.add("active");
+
+			setTimeout(() => {
+				header.classList.remove("active");
+			}, 800);
+		}
+	});</script><script src=https://voluxyy.github.io/portfolio></script><meta content="Anaël Lasserre" property=og:site_name><meta content="Who am I ? - Anaël Lasserre" property=og:title><meta content=https://voluxyy.github.io/portfolio/whoami/ property=og:url><meta content="Modern, pretty, and clean theme." property=og:description><meta content=https://voluxyy.github.io/portfolio/card.png property=og:image><meta content=summary_large_image property=twitter:card><meta content=en_US property=og:locale><body><header id=site-nav><nav><a href=#main id=main-content tabindex=0> Skip to main content </a><ul><li id=home><a href=https://voluxyy.github.io/portfolio>Anaël Lasserre</a><li><a class=active href=https://voluxyy.github.io/portfolio/whoami>WhoAmI</a><li><a href=https://voluxyy.github.io/portfolio/stage>Stage</a><li><a href=https://voluxyy.github.io/portfolio/bashroom>Bashroom</a><li id=language-switcher><details><summary title=Language><i class=icon></i></summary> <ul><li><a href=https://voluxyy.github.io/portfolio/en/whoami/ lang=en>English</a></ul></details></ul></nav><div id=search-container><label class=hidden for=search-bar>Search</label><input placeholder="Search for…" autocomplete=off disabled id=search-bar type=search><div id=search-results></div></div></header><div class=container id=main><style>body {
+    background: linear-gradient(180deg, rgba(0,64,0,.6) 0%, rgba(0,0,0,1) 75%);
+  }</style><h1 id=who-am-i>Who am I ?</h1><section class=whoami-pres><h2>Présentation</h2><div class=whoami-pres-container><div><img src="https://github.com/voluxyy/portfolio/blob/main/static/whoami/profile.jpeg?raw=true" alt=Profile class=no-hover></div><div><p align=center>Bonjour 🙂<p>Je m'appelle Anaël Lasserre, j'ai 19 ans et je suis étudiant à Toulouse Ynov Campus. Je viens de terminer ma deuxième année de bachelor. Mon parcours académique a été motivé par mon enthousiasme pour la cybersécurité et l'infrastructure des systèmes d'information, et je suis impatient de continuer à apprendre et à évoluer dans ce domaine.</div></div></section><section class=whoami-exp><h2>Expériences</h2><section><article><div><h3>Stage Bashroom 2023</h3><p class=whoami-exp-date>26/06/2023 au 07/08/2023</div><div class=whoami-exp-description><p>Durant ma première année à Ynov, j'ai travaillé lors des Ydays avec Bashroom. J'ai eu l'opportunité de faire un stage lors de ma première année avec Bashroom, qui m'a permis de premier contact avec le monde professionnel.</div></article><article><div><h3>Stage Bashroom 2024</h3><p class=whoami-exp-date>04/12/2023 au 23/02/2024</div><div class=whoami-exp-description><p>Lors de la deuxième année à Ynov, nous devons faire un stage pour valider l'année. J'ai alors proposé de faire à nouveau un stage avec Bashroom qui a été accepté. Ce deuxième stage m'a permis d'être un peu plus intégré et de travailler sur des tâches en collaboration avec d'autres stagiaires.</div></article><article><div><h3>CDD Bashroom 2024</h3><p class=whoami-exp-date>03/05/2024 au 15/08/2024</div><div class=whoami-exp-description><p>A la fin de mon deuxième stage, j'ai proposé à Bashroom de me prendre en CDD à temps partiel avec les cours le matin. Proposition, qui s'est vu, refusé mais qui m'a permis de décrocher un contrat quelques mois plus tard.<p>Ce contrat est un privilège qui me permet, au moment au j'écris ceci, de continuer à développer mes compétences et de travailler en collaboration avec toute l'équipe Bashroom sur des projets qui nécessitent beaucoup plus de responsabilité.</div></article></section></section><section class=whoami-skills><h2>Compétences</h2><div class=whoami-skills-container><div><img alt="HTML Icon" class=no-hover src=https://cdn-icons-png.flaticon.com/512/5968/5968350.png><h3>Python</h3></div><div><img alt="CSS Icon" class=no-hover src=https://cdn-icons-png.flaticon.com/512/6132/6132222.png><h3>C++</h3></div><div><img alt="JavaScript Icon" class=no-hover src=https://cdn-icons-png.flaticon.com/512/5968/5968292.png><h3>JavaScript</h3></div><div><img alt="Python Icon" class=no-hover src=https://cdn-icons-png.flaticon.com/512/5968/5968381.png><h3>TypeScript</h3></div></div></section><div class=whoami-crt><div class="crt scanlines"><pre class=z-code><code><span class="z-text z-plain">                                                       ..::''''::..
+                                             .:::.   .;''        ``;.
+     ....                                    :::::  ::    ::  ::    ::
+   ,;' .;:                ::  ..:            `:::' ::     ::  ::     ::
+   ::.      ..:,:;.,:;.    .   ::   .::::.    `:'  :: .:' ::  :: `:. ::
+    '''::,   ::  ::  ::  `::   ::  ;:   .::    :   ::  :          :  ::
+  ,:';  ::;  ::  ::  ::   ::   ::  ::,::''.    .    :: `:.      .:' ::
+  `:,,,,;;' ,;; ,;;, ;;, ,;;, ,;;, `:,,,,:'   :;:    `;..``::::''..;'
+                                                       ``::,,,,::''
+
+      Garde le sourire et passe une excellente journée !
+</span></code></pre></div></div></div><footer id=site-footer><p>© Anaël Lasserre, 2024<ul id=socials><li><a rel=" me" href=https://github.com/voluxyy title=GitHub> <i style="mask-image: url(&#34data:image/svg+xml,%3Csvg role='img' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EGitHub%3C/title%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E&#34); -webkit-mask-image: url(&#34data:image/svg+xml,%3Csvg role='img' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EGitHub%3C/title%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E&#34)" class=icon></i> <span>GitHub</span> </a><li><a rel=" me" href=https://www.linkedin.com/in/ana%C3%ABl-lasserre-33a706265 title=Linkedin> <i style='mask-image: url("data:image/svg+xml,"); -webkit-mask-image: url("data:image/svg+xml,")' class=icon></i> <span>Linkedin</span> </a></ul></footer>
