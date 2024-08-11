@@ -527,3 +527,18 @@ Voici le résultat de ce graphique :
 {{ image(url="https://github.com/voluxyy/portfolio/blob/main/static/stage/three-3d-force-graph-result.png?raw=true", alt="Resultat script graphique 3D three.js", no_hover=true) }}
 
 Le nœud jaune que nous apercevons n'est pas gris car je l'ai volontairement survolé avec la souris pour montrer l'effet de changement de couleur lors du survol d'un nœud.
+
+<section class="task-nav">
+    <a href="/stage">
+        <div>
+            <span class="previous">← </span>
+            <span class="label">Toutes les tâches</span>
+        </div>
+    </a>
+    <a href="./exportation-godot">
+        <div>
+            <span class="label">Première tâche</span>
+            <span class="next">→</span>
+        </div>
+    </a>
+</section>

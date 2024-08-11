@@ -415,3 +415,18 @@ echo -e "$requestServer" > Exported_$name/proxy_server.py
     exit 0
 
 </details>
+
+<section class="task-nav">
+    <a href="/stage">
+        <div>
+            <span class="previous">← </span>
+            <span class="label">Toutes les tâches</span>
+        </div>
+    </a>
+    <a href="./graphique-3d-formations">
+        <div>
+            <span class="label">Deuxième tâche</span>
+            <span class="next">→</span>
+        </div>
+    </a>
+</section>
