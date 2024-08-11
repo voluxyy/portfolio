@@ -527,3 +527,18 @@ Here is the result of this graph:
 {{ image(url="https://github.com/voluxyy/portfolio/blob/main/static/stage/three-3d-force-graph-result.png?raw=true", alt="3D Graph Three.js Script Result", no_hover=true) }}
 
 The yellow node you see is not grey because I deliberately hovered over it with the mouse to show the color change effect when hovering over a node.
+
+<section class="task-nav">
+    <a href="/en/stage">
+        <div>
+            <span class="previous">← </span>
+            <span class="label">All tasks</span>
+        </div>
+    </a>
+    <a href="/en/stage/exportation-godot">
+        <div>
+            <span class="label">First task</span>
+            <span class="next">→</span>
+        </div>
+    </a>
+</section>

@@ -11,7 +11,7 @@ Ceci est un récapitulatif de mon stage en 2024 au sein de Bashroom. J'explique 
 <section class="stage-task">
   <h2>Tâches</h2>
   <section>
-    <a href="./stage/exportation-godot">
+    <a href="/stage/exportation-godot">
       <article>
         <div>
           <h3>Automatiser l'exportation de projet Godot</h3>
@@ -22,7 +22,7 @@ Ceci est un récapitulatif de mon stage en 2024 au sein de Bashroom. J'explique 
         </div>
       </article>
     </a>
-    <a href="./stage/graphique-3d-formations">
+    <a href="/stage/graphique-3d-formations">
       <article>
         <div>
           <h3>Graphique D3.js pour afficher les futures formations</h3>
@@ -33,7 +33,7 @@ Ceci est un récapitulatif de mon stage en 2024 au sein de Bashroom. J'explique 
         </div>
       </article>
     </a>
-    <a href="./stage/graphiques-formations-data-science">
+    <a href="/stage/graphiques-formations-data-science">
       <article>
         <div>
           <h3>Graphique 2D avec D3.js et graphique 3D avec three.js pour la formation data science</h3>

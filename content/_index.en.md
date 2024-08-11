@@ -4,12 +4,12 @@ title = "Home"
 
 # Welcome to my Portfolio 👋
 
-This portfolio presents my internship carried out in 2024 at the company [Bashroom](./bashroom).
+This portfolio presents my internship carried out in 2024 at the company [Bashroom](/en/bashroom).
 
 I will present the tasks that were given to me during the internship and then link them to what I learned at Ynov and how it helped me during the internship.
 
 {% alert(tip=true) %}
-If you don't know me, I invite you to visit the [WhoAmI](./whoami) page.
+If you don't know me, I invite you to visit the [WhoAmI](/en/whoami) page.
 {% end %}
 
 ## Contact

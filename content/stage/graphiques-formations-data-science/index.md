@@ -535,7 +535,7 @@ Le nœud jaune que nous apercevons n'est pas gris car je l'ai volontairement sur
             <span class="label">Toutes les tâches</span>
         </div>
     </a>
-    <a href="./exportation-godot">
+    <a href="/stage/exportation-godot">
         <div>
             <span class="label">Première tâche</span>
             <span class="next">→</span>

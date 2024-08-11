@@ -436,3 +436,18 @@ Here is the result of this script in the browser:
 {{ image(url="https://github.com/voluxyy/portfolio/blob/main/static/stage/d3-formations-result.png?raw=true", alt="D3.js Graph Script Result", no_hover=true) }}
 
 We can see that some nodes are collapsed, such as: nestjs, rust, typescript, ansible, aws, and cloud. We can also see that dates are available only for the training sessions in the bottom right of the graph.
+
+<section class="task-nav">
+    <a href="/en/stage">
+        <div>
+            <span class="previous">← </span>
+            <span class="label">All tasks</span>
+        </div>
+    </a>
+    <a href="/en/stage/graphiques-formations-data-science">
+        <div>
+            <span class="label">Third task</span>
+            <span class="next">→</span>
+        </div>
+    </a>
+</section>

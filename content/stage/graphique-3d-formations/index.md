@@ -444,7 +444,7 @@ Nous pouvons voir que certains nœuds sont repliés, comme : nestjs, rust, types
             <span class="label">Toutes les tâches</span>
         </div>
     </a>
-    <a href="./graphiques-formations-data-science">
+    <a href="/stage/graphiques-formations-data-science">
         <div>
             <span class="label">Troisième tâche</span>
             <span class="next">→</span>

@@ -423,7 +423,7 @@ echo -e "$requestServer" > Exported_$name/proxy_server.py
             <span class="label">Toutes les tâches</span>
         </div>
     </a>
-    <a href="./graphique-3d-formations">
+    <a href="/stage/graphique-3d-formations">
         <div>
             <span class="label">Deuxième tâche</span>
             <span class="next">→</span>

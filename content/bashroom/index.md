@@ -185,3 +185,7 @@ Bashroom se positionne comme un partenaire stratégique de choix, offrant expert
         </li>
     </ul>
 </section>
+
+{% alert(tip=true) %}
+Pour plus d'informations vous pouvez consulter le [site de l'entreprise](https://bashroom.com).
+{% end %}

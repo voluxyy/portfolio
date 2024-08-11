@@ -11,7 +11,7 @@ This is a summary of my 2024 internship at Bashroom. I explain what I did during
 <section class="stage-task">
   <h2>Tasks</h2>
   <section>
-    <a href="./stage/exportation-godot">
+    <a href="/en/stage/exportation-godot">
       <article>
         <div>
           <h3>Automating Godot Project Export</h3>
@@ -22,7 +22,7 @@ This is a summary of my 2024 internship at Bashroom. I explain what I did during
         </div>
       </article>
     </a>
-    <a href="./stage/graphique-3d-formations">
+    <a href="/en/stage/graphique-3d-formations">
       <article>
         <div>
           <h3>D3.js Graph to Display Upcoming Trainings</h3>
@@ -33,7 +33,7 @@ This is a summary of my 2024 internship at Bashroom. I explain what I did during
         </div>
       </article>
     </a>
-    <a href="./stage/graphiques-formations-data-science">
+    <a href="/en/stage/graphiques-formations-data-science">
       <article>
         <div>
           <h3>2D Graph with D3.js and 3D Graph with Three.js for Data Science Training</h3>
