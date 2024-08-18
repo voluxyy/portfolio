@@ -1,20 +1,18 @@
 # Portfolio
 
-This project is my portfolio of my stage to validate my second year at Ynov Campus Toulouse. It is made using [zola](https://www.getzola.org/). It is a framework to make static website very easily.\
+This project is my portfolio of my stage to validate my second year at Ynov Campus Toulouse.
+
+It is made using [zola](https://www.getzola.org/). It is a framework to make static website very easily.\
 The website is reachable at this url: [voluxyy.github.io/portfolio](https://voluxyy.github.io/portfolio)
 
-## Information
+## Informations
 
-- Enterprise: Bashroom
-- Stage master: Hadrien Toma
-- Localization: Toulouse
-- Duration: 12 weeks (04/12/2023 to 23/02/2024)
+If you want to serve the website in local, you must use zola v0.19.1 or more.
 
-### Tasks
+Download zola v0.19.1 [here](https://github.com/getzola/zola/releases/tag/v0.19.1).
 
-- Learn godot to export a godot project to web version with a script.
-- D3.js graph to display the future formations session of the enterprise.
-- 2D graph with D3.js and 3D graph with three.js for the data science formation.
-- Convert graphs i made for data science formation in R (language).
-- Convert another google colab (Python) into another Kaggle (R).
-- Make an exercise for a formation using electron and cpp.
+Install it and when it's done, just run this command in the root folder:
+
+```bash
+zola serve
+```

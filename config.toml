@@ -35,7 +35,7 @@ primary_color_dark = "#006000"
 primary_color_dark_alpha = "rgba(0, 96, 0, 0.2)"
 # Use emoji as a favicon.
 # Only one emoji is being rendered, everything else is truncated.
-# emoji_favicon = "🦆🪶"
+emoji_favicon = "💼"
 # URL to website's issue tracker
 issues_url = "https://github.com/voluxyy/portfolio/issues"
 # URL to website's source code
