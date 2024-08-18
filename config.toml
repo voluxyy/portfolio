@@ -42,38 +42,12 @@ issues_url = "https://github.com/voluxyy/portfolio/issues"
 source_url = "https://github.com/voluxyy/portfolio"
 # If you are using Sass it will be generated there automatically.
 stylesheets = [
-  "_alerts.css",
-  "_article-list.css",
-  "_article.css",
   "bashroom.css",
-  "_buttons.css",
-  "_code.css",
-  "_comments.css",
-  "_crt.css",
-  "_external.css",
-  "_footer.css",
-  "_footnotes-list.css",
-  "_general.css",
-  "_hidden.css",
   "home.css",
-  "_icon.css",
-  "_input.css",
-  "_media.css",
-  "_nav.css",
-  "_normalize.css",
-  "_not-found.css",
-  "_post-nav.css",
-  "_pre-container.css",
   "stage.css",
-  "_statements.css",
   "style.css",
   "styles.css",
-  "_table.css",
-  "_tags.css",
-  "_typography.css",
-  "_variables.css",
   "whoami.css",
-  "_zola-anchor.css"
 ]
 # Additional JavaScript scripts; expects them to be in the "./static/" directory.
 # scripts = [
