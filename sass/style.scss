@@ -55,6 +55,15 @@ body {
 	outline-offset: 0.125rem;
 }
 
+// Fallback for older browsers
+@supports not selector(:focus-visible) {
+	:focus {
+		animation: focus-in var(--transition);
+		outline: 0.125rem solid var(--primary-color);
+		outline-offset: 0.125rem;
+	}
+}
+
 @keyframes focus-in {
 	from {
 		outline: 0.5rem solid transparent;
