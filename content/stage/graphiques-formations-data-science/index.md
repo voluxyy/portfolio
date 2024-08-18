@@ -529,13 +529,13 @@ Voici le résultat de ce graphique :
 Le nœud jaune que nous apercevons n'est pas gris car je l'ai volontairement survolé avec la souris pour montrer l'effet de changement de couleur lors du survol d'un nœud.
 
 <section class="task-nav">
-    <a href="/stage">
+    <a href="/portfolio/stage">
         <div>
             <span class="previous">← </span>
             <span class="label">Toutes les tâches</span>
         </div>
     </a>
-    <a href="/stage/exportation-godot">
+    <a href="/portfolio/stage/exportation-godot">
         <div>
             <span class="label">Première tâche</span>
             <span class="next">→</span>

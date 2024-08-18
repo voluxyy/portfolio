@@ -529,13 +529,13 @@ Here is the result of this graph:
 The yellow node you see is not grey because I deliberately hovered over it with the mouse to show the color change effect when hovering over a node.
 
 <section class="task-nav">
-    <a href="/en/stage">
+    <a href="/portfolio/en/stage">
         <div>
             <span class="previous">← </span>
             <span class="label">All tasks</span>
         </div>
     </a>
-    <a href="/en/stage/exportation-godot">
+    <a href="/portfolio/en/stage/exportation-godot">
         <div>
             <span class="label">First task</span>
             <span class="next">→</span>

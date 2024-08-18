@@ -438,13 +438,13 @@ Voici le résultat de ce script dans le navigateur :
 Nous pouvons voir que certains nœuds sont repliés, comme : nestjs, rust, typescript, ansible, aws et cloud. Nous pouvons aussi voir que des dates sont disponibles uniquement pour les formations en bas à droite du graphique.
 
 <section class="task-nav">
-    <a href="/stage">
+    <a href="/portfolio/stage">
         <div>
             <span class="previous">← </span>
             <span class="label">Toutes les tâches</span>
         </div>
     </a>
-    <a href="/stage/graphiques-formations-data-science">
+    <a href="/portfolio/stage/graphiques-formations-data-science">
         <div>
             <span class="label">Troisième tâche</span>
             <span class="next">→</span>
