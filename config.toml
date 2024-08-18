@@ -45,7 +45,6 @@ stylesheets = [
   "bashroom.css",
   "home.css",
   "stage.css",
-  "style.css",
   "styles.css",
   "whoami.css",
 ]
