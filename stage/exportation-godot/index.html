@@ -1,410 +1,349 @@
-<!doctype html><html lang=fr xmlns=http://www.w3.org/1999/xhtml><head><meta charset=UTF-8><meta content="Modern, pretty, and clean theme." name=description><meta content="width=device-width,initial-scale=1" name=viewport><meta content=#008000 name=theme-color><meta content=#006000 media=(prefers-color-scheme:dark) name=theme-color><title>Exportation Godot - Anaël Lasserre</title><link href=https://voluxyy.github.io/portfolio/stage/exportation-godot/ rel=canonical><link href=https://vmst.io/@daudix rel=me><link href=https://voluxyy.github.io/portfolio/favicon.png rel=icon type=image/png><link href=https://voluxyy.github.io/portfolio/apple-touch-icon.png rel=apple-touch-icon sizes=180x180 type=image/png><link href=https://voluxyy.github.io/portfolio/style.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/_alerts.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/_article-list.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/_article.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/bashroom.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/_buttons.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/_code.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/_comments.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/_crt.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/_external.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/_footer.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/_footnotes-list.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/_general.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/_hidden.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/home.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/_icon.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/_input.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/_media.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/_nav.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/_normalize.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/_not-found.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/_post-nav.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/_pre-container.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/stage.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/_statements.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/style.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/styles.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/_table.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/_tags.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/_typography.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/_variables.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/whoami.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/_zola-anchor.css rel=stylesheet><style>:root {
-			--primary-color: #008000;
-			--primary-color-alpha: rgba(0, 128, 0, 0.2);
-		}
-			@media (prefers-color-scheme: dark) {
-				:root {
-					--primary-color: #006000;
-					--primary-color-alpha: rgba(0, 96, 0, 0.2);
-				}
-			}</style><script>document.addEventListener("DOMContentLoaded", function () {
-		let blocks = document.querySelectorAll("pre[class^='language-']");
-
-		blocks.forEach((block) => {
-			if (navigator.clipboard) {
-				// Code block header title
-				let title = document.createElement("span");
-				let lang = block.getAttribute("data-lang");
-				title.innerHTML = lang;
-
-				// Copy button icon
-				let icon = document.createElement("i");
-				icon.classList.add("icon");
-
-				// Copy button
-				let button = document.createElement("button");
-				button.setAttribute("title", "Copy code")
-				button.appendChild(icon);
-
-				// Code block header
-				let header = document.createElement("div");
-				header.classList.add("header");
-				header.appendChild(button);
-				header.appendChild(title);
-
-				// Container that holds header and the code block itself
-				let container = document.createElement("div");
-				container.classList.add("pre-container");
-				container.appendChild(header);
-
-				// Move code block into the container
-				block.parentNode.insertBefore(container, block);
-				container.appendChild(block);
-
-				button.addEventListener("click", async () => {
-					await copyCode(block, header);
-				});
-			}
-		});
-
-		async function copyCode(block, header) {
-			let code = block.querySelector("code");
-			let text = code.innerText;
-
-			await navigator.clipboard.writeText(text);
-
-			header.classList.add("active");
-
-			setTimeout(() => {
-				header.classList.remove("active");
-			}, 800);
-		}
-	});</script><script src=https://voluxyy.github.io/portfolio></script><meta content="Anaël Lasserre" property=og:site_name><meta content="Exportation Godot - Anaël Lasserre" property=og:title><meta content=https://voluxyy.github.io/portfolio/stage/exportation-godot/ property=og:url><meta content="Modern, pretty, and clean theme." property=og:description><meta content=https://voluxyy.github.io/portfolio/card.png property=og:image><meta content=summary_large_image property=twitter:card><meta content=en_US property=og:locale><body><header id=site-nav><nav><a href=#main id=main-content tabindex=0> Skip to main content </a><ul><li id=home><a href=https://voluxyy.github.io/portfolio>Anaël Lasserre</a><li><a href=https://voluxyy.github.io/portfolio/whoami>WhoAmI</a><li><a href=https://voluxyy.github.io/portfolio/stage>Stage</a><li><a href=https://voluxyy.github.io/portfolio/bashroom>Bashroom</a><li id=language-switcher><details><summary title=Language><i class=icon></i></summary> <ul><li><a href=https://voluxyy.github.io/portfolio/en/stage/exportation-godot/ lang=en>English</a></ul></details></ul></nav><div id=search-container><label class=hidden for=search-bar>Search</label><input placeholder="Search for…" autocomplete=off disabled id=search-bar type=search><div id=search-results></div></div></header><div class=container id=main><h2 id=1-automatiser-l-exportation-de-projet-godot>1. Automatiser l’exportation de projet Godot</h2><p>La première tâche que j’ai eu lors de mon stage fut d’automatiser le processus d’exportation de projet du moteur Godot.<h3 id=1-les-templates-d-exportation>1. Les templates d’exportation</h3><p>J’ai commencé par utiliser Godot et exporter un projet depuis l’interface graphique du logiciel.</p><img alt="Godot export menu" src="https://github.com/voluxyy/portfolio/blob/main/static/stage/godot-export-menu.png?raw=true" class=no-hover><p>Le fait d’utiliser l’interface m’a permis de comprendre et d’identifier les différents paramètres importants à l’exportation d’un projet.<p>Notamment lors de la première exportation, si le logiciel ne détecte pas de template d’exportation, il propose d’en télécharger un depuis le miroir de notre choix.</p><img alt="Godot template download" src="https://github.com/voluxyy/portfolio/blob/main/static/stage/godot-template-download1.png?raw=true" class=no-hover><img alt="Godot template download" src="https://github.com/voluxyy/portfolio/blob/main/static/stage/godot-template-download2.png?raw=true" class=no-hover><p>Suite à cette découverte, j’ai ajouté le code suivant dans mon script pour vérifier si un template de la bonne version existe déjà. Si ce n’est pas le cas, je le télécharge depuis GitHub.<pre class="language-bash z-code" data-lang=bash><code class=language-bash data-lang=bash><span class="z-source z-shell z-bash"><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Check if there are already export templates</span><span class="z-comment z-line z-number-sign z-shell">
-</span><span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">"</span>Check if there are export templates...<span class="z-punctuation z-definition z-string z-end z-shell">"</span></span></span>
-
-<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mkdir</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>p</span> <span class="z-meta z-group z-expansion z-tilde"><span class="z-variable z-language z-tilde z-shell">~</span></span>/.local/share/godot/export_templates/<span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">version</span></span></span>
-
-<span class="z-variable z-other z-readwrite z-assignment z-shell">exportTpl</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell"><span class="z-meta z-group z-expansion z-command z-parens z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-punctuation z-section z-parens z-begin z-shell">(</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ls</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-meta z-group z-expansion z-tilde"><span class="z-variable z-language z-tilde z-shell">~</span></span>/.local/share/godot/export_templates/<span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">version</span></span></span><span class="z-punctuation z-section z-parens z-end z-shell">)</span></span></span>
-
-<span class="z-variable z-other z-readwrite z-assignment z-shell">linkVersion</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell"><span class="z-meta z-group z-expansion z-command z-parens z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-punctuation z-section z-parens z-begin z-shell">(</span><span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">version</span></span></span> <span class="z-keyword z-operator z-logical z-pipe z-shell">|</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">grep</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>oP</span> <span class="z-string z-quoted z-single z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">'</span>(\d+(\.\d+)+)<span class="z-punctuation z-definition z-string z-end z-shell">'</span></span></span><span class="z-punctuation z-section z-parens z-end z-shell">)</span></span></span>
-
-
-<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Download export templates if there aren't already downloaded</span><span class="z-comment z-line z-number-sign z-shell">
-</span><span class="z-keyword z-control z-conditional z-if z-shell">if</span> <span class="z-meta z-function-call z-arguments z-shell"><span class="z-support z-function z-double-brace z-begin z-shell">[[</span> <span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">exportTpl</span></span> <span class="z-keyword z-operator z-logical z-shell">==</span> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">"</span><span class="z-punctuation z-definition z-string z-end z-shell">"</span></span> <span class="z-support z-function z-double-brace z-end z-shell">]]</span></span><span class="z-keyword z-operator z-logical z-continue z-shell">;</span>
-<span class="z-keyword z-control z-conditional z-then z-shell">then</span>
-	<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">"</span>Export templates not found...<span class="z-punctuation z-definition z-string z-end z-shell">"</span></span></span>
-	<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">"</span>Downloading export templates...<span class="z-punctuation z-definition z-string z-end z-shell">"</span></span></span>
-	<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">wget</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>q</span> https://github.com/godotengine/godot/releases/download/<span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">linkVersion</span></span>-stable/Godot_v<span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">linkVersion</span></span>-stable_export_templates.tpz</span>
-	<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">unzip</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>qq</span> Godot_v<span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">linkVersion</span></span>-stable_export_templates.tpz</span>
-	<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mv</span></span><span class="z-meta z-function-call z-arguments z-shell"> templates/<span class="z-keyword z-operator z-regexp z-quantifier z-shell">*</span> <span class="z-meta z-group z-expansion z-tilde"><span class="z-variable z-language z-tilde z-shell">~</span></span>/.local/share/godot/export_templates/<span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">version</span></span></span>
-	<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">rm</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>r</span> templates</span>
-	<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">rm</span></span><span class="z-meta z-function-call z-arguments z-shell"> Godot_v<span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">linkVersion</span></span>-stable_export_templates.tpz</span>
-<span class="z-keyword z-control z-conditional z-else z-shell">else</span>
-	<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">"</span>Export templates found...<span class="z-punctuation z-definition z-string z-end z-shell">"</span></span></span>
-<span class="z-keyword z-control z-conditional z-end z-shell">fi</span>
+<!doctype html><html lang=fr xmlns=http://www.w3.org/1999/xhtml><head><meta charset=UTF-8><meta content="Modern, pretty, and clean theme." name=description><meta content="width=device-width,initial-scale=1" name=viewport><meta content=#008000 name=theme-color><meta content=#006000 media=(prefers-color-scheme:dark) name=theme-color><title>Exportation Godot - Anaël Lasserre</title><link href=https://voluxyy.github.io/portfolio/stage/exportation-godot/ rel=canonical><link href=https://voluxyy.github.io/portfolio/syntax-theme.css rel=stylesheet><link href=https://vmst.io/@daudix rel=me><link href=https://voluxyy.github.io/portfolio/favicon.png rel=icon type=image/png><link href=https://voluxyy.github.io/portfolio/apple-touch-icon.png rel=apple-touch-icon sizes=180x180 type=image/png><link href=https://voluxyy.github.io/portfolio/style.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/bashroom.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/home.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/stage.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/style.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/styles.css rel=stylesheet><link href=https://voluxyy.github.io/portfolio/whoami.css rel=stylesheet><style>:root{--primary-color:green;--primary-color-alpha:#00800033}@media (prefers-color-scheme:dark){:root{--primary-color:#006000;--primary-color-alpha:#00600033}}</style><script>document.addEventListener(`DOMContentLoaded`,(()=>{let c=`div`,d=`active`;var b=(async(a,b)=>{let c=a.querySelector(`code`);let e=c.innerText;await navigator.clipboard.writeText(e);b.classList.add(d);setTimeout(()=>{b.classList.remove(d)},800)});let a=document.querySelectorAll(`pre[class^='language-']`);a.forEach(a=>{if(navigator.clipboard){let d=document.createElement(`span`);let e=a.getAttribute(`data-lang`);d.innerHTML=e;let f=document.createElement(`i`);f.classList.add(`icon`);let g=document.createElement(`button`);g.setAttribute(`title`,`Copy code`);g.appendChild(f);let h=document.createElement(c);h.classList.add(`header`);h.appendChild(g);h.appendChild(d);let i=document.createElement(c);i.classList.add(`pre-container`);i.appendChild(h);a.parentNode.insertBefore(i,a);i.appendChild(a);g.addEventListener(`click`,async()=>{await b(a,h)})}})}))</script><script src=https://voluxyy.github.io/portfolio></script><meta content="Anaël Lasserre" property=og:site_name><meta content="Exportation Godot - Anaël Lasserre" property=og:title><meta content=https://voluxyy.github.io/portfolio/stage/exportation-godot/ property=og:url><meta content="Modern, pretty, and clean theme." property=og:description><meta content=https://voluxyy.github.io/portfolio/card.png property=og:image><meta content=summary_large_image property=twitter:card><meta content=en_US property=og:locale><body><header id=site-nav><nav><a href=#main id=main-content tabindex=0> Skip to main content </a><ul><li id=home><a href=https://voluxyy.github.io/portfolio>Anaël Lasserre</a><li><a href=https://voluxyy.github.io/portfolio/whoami>WhoAmI</a><li><a href=https://voluxyy.github.io/portfolio/stage>Stage</a><li><a href=https://voluxyy.github.io/portfolio/bashroom>Bashroom</a><li id=language-switcher><details><summary title=Language><i class=icon></i></summary> <ul><li><a href=https://voluxyy.github.io/portfolio/en/stage/exportation-godot/ lang=en>English</a></ul></details></ul></nav><div id=search-container><label class=hidden for=search-bar>Search</label><input placeholder="Search for…" autocomplete=off disabled id=search-bar type=search><div id=search-results></div></div></header><div class=container id=main><h2 id=1-automatiser-l-exportation-de-projet-godot>1. Automatiser l’exportation de projet Godot</h2><p>La première tâche que j’ai eu lors de mon stage fut d’automatiser le processus d’exportation de projet du moteur Godot.<h3 id=1-les-templates-d-exportation>1. Les templates d’exportation</h3><p>J’ai commencé par utiliser Godot et exporter un projet depuis l’interface graphique du logiciel.</p><img alt="Godot export menu" src="https://github.com/voluxyy/portfolio/blob/main/static/stage/godot-export-menu.png?raw=true" class=no-hover><p>Le fait d’utiliser l’interface m’a permis de comprendre et d’identifier les différents paramètres importants à l’exportation d’un projet.<p>Notamment lors de la première exportation, si le logiciel ne détecte pas de template d’exportation, il propose d’en télécharger un depuis le miroir de notre choix.</p><img alt="Godot template download" src="https://github.com/voluxyy/portfolio/blob/main/static/stage/godot-template-download1.png?raw=true" class=no-hover><img alt="Godot template download" src="https://github.com/voluxyy/portfolio/blob/main/static/stage/godot-template-download2.png?raw=true" class=no-hover><p>Suite à cette découverte, j’ai ajouté le code suivant dans mon script pour vérifier si un template de la bonne version existe déjà. Si ce n’est pas le cas, je le télécharge depuis GitHub.<pre class="language-bash z-code" data-lang=bash><code class=language-bash data-lang=bash><span class="z-source z-shell z-bash"><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Check if there are already export templates</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">"</span>Check if there are export templates...<span class="z-punctuation z-definition z-string z-end z-shell">"</span></span></span>
+</span><span class="z-source z-shell z-bash">
+</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mkdir</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>p</span> <span class="z-meta z-group z-expansion z-tilde"><span class="z-variable z-language z-tilde z-shell">~</span></span>/.local/share/godot/export_templates/<span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">version</span></span></span>
+</span><span class="z-source z-shell z-bash">
+</span><span class="z-source z-shell z-bash"><span class="z-variable z-other z-readwrite z-assignment z-shell">exportTpl</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell"><span class="z-meta z-group z-expansion z-command z-parens z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-punctuation z-section z-parens z-begin z-shell">(</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ls</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-meta z-group z-expansion z-tilde"><span class="z-variable z-language z-tilde z-shell">~</span></span>/.local/share/godot/export_templates/<span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">version</span></span></span><span class="z-punctuation z-section z-parens z-end z-shell">)</span></span></span>
+</span><span class="z-source z-shell z-bash">
+</span><span class="z-source z-shell z-bash"><span class="z-variable z-other z-readwrite z-assignment z-shell">linkVersion</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell"><span class="z-meta z-group z-expansion z-command z-parens z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-punctuation z-section z-parens z-begin z-shell">(</span><span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">version</span></span></span> <span class="z-keyword z-operator z-logical z-pipe z-shell">|</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">grep</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>oP</span> <span class="z-string z-quoted z-single z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">'</span>(\d+(\.\d+)+)<span class="z-punctuation z-definition z-string z-end z-shell">'</span></span></span><span class="z-punctuation z-section z-parens z-end z-shell">)</span></span></span>
+</span><span class="z-source z-shell z-bash">
+</span><span class="z-source z-shell z-bash">
+</span><span class="z-source z-shell z-bash"><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Download export templates if there aren't already downloaded</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span><span class="z-source z-shell z-bash"><span class="z-keyword z-control z-conditional z-if z-shell">if</span> <span class="z-meta z-function-call z-arguments z-shell"><span class="z-support z-function z-double-brace z-begin z-shell">[[</span> <span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">exportTpl</span></span> <span class="z-keyword z-operator z-logical z-shell">==</span> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">"</span><span class="z-punctuation z-definition z-string z-end z-shell">"</span></span> <span class="z-support z-function z-double-brace z-end z-shell">]]</span></span><span class="z-keyword z-operator z-logical z-continue z-shell">;</span>
+</span><span class="z-source z-shell z-bash"><span class="z-keyword z-control z-conditional z-then z-shell">then</span>
+</span><span class="z-source z-shell z-bash">	<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">"</span>Export templates not found...<span class="z-punctuation z-definition z-string z-end z-shell">"</span></span></span>
+</span><span class="z-source z-shell z-bash">	<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">"</span>Downloading export templates...<span class="z-punctuation z-definition z-string z-end z-shell">"</span></span></span>
+</span><span class="z-source z-shell z-bash">	<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">wget</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>q</span> https://github.com/godotengine/godot/releases/download/<span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">linkVersion</span></span>-stable/Godot_v<span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">linkVersion</span></span>-stable_export_templates.tpz</span>
+</span><span class="z-source z-shell z-bash">	<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">unzip</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>qq</span> Godot_v<span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">linkVersion</span></span>-stable_export_templates.tpz</span>
+</span><span class="z-source z-shell z-bash">	<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">mv</span></span><span class="z-meta z-function-call z-arguments z-shell"> templates/<span class="z-keyword z-operator z-regexp z-quantifier z-shell">*</span> <span class="z-meta z-group z-expansion z-tilde"><span class="z-variable z-language z-tilde z-shell">~</span></span>/.local/share/godot/export_templates/<span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">version</span></span></span>
+</span><span class="z-source z-shell z-bash">	<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">rm</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>r</span> templates</span>
+</span><span class="z-source z-shell z-bash">	<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">rm</span></span><span class="z-meta z-function-call z-arguments z-shell"> Godot_v<span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">linkVersion</span></span>-stable_export_templates.tpz</span>
+</span><span class="z-source z-shell z-bash"><span class="z-keyword z-control z-conditional z-else z-shell">else</span>
+</span><span class="z-source z-shell z-bash">	<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">"</span>Export templates found...<span class="z-punctuation z-definition z-string z-end z-shell">"</span></span></span>
+</span><span class="z-source z-shell z-bash"><span class="z-keyword z-control z-conditional z-end z-shell">fi</span>
 </span></code></pre><h3 id=2-les-presets-d-exportation>2. Les presets d’exportation</h3><p>Ensuite, j’ai suivi la documentation de Godot pour l’utiliser en <abbr title="Command Line Interface">CLI</abbr>. J’ai trouvé des commandes qui se sont avérées utiles pour réaliser ma mission.</p><img alt="Godot CLI documentation" src="https://github.com/voluxyy/portfolio/blob/main/static/stage/godot-cli-doc.png?raw=true" class=no-hover><p>En observant les arguments, nous retrouvons <mark>preset</mark> et <mark>path</mark>. <strong>Path</strong> qui signifie tout simplement le chemin absolu ou relatif vers le projet godot, alors que <strong>Preset</strong> est un peu complexe à comprendre.<p>J’ai compris qu’ajouter un preset d’exportation au projet comme sur l’image suivante :</p><img alt="Godot adding export option menu" src="https://github.com/voluxyy/portfolio/blob/main/static/stage/godot-export-menu.png?raw=true" class=no-hover><p>Permet de générer, si non existant, le fichier <code>export_presets.cfg</code> à la racine du projet Godot et ajoute la configuration du preset dedans avec les options que nous lui affectons.<p>Voici à quoi ressemble un preset dans le fichier <code>export_presets.cfg</code> :<pre class="language-txt z-code" data-lang=txt><code class=language-txt data-lang=txt><span class="z-text z-plain">[preset.0]
-
-name="Web"
-platform="Web"
-runnable=true
-dedicated_server=false
-custom_features=""
-export_filter="all_resources"
-include_filter="*.csv"
-exclude_filter=""
-export_path="Exported_'$name'/'$name'.html"
-encryption_include_filters=""
-encryption_exclude_filters=""
-encrypt_pck=false
-encrypt_directory=false
-
-[preset.0.options]
-
-custom_template/debug=""
-custom_template/release=""
-variant/extensions_support=false
-vram_texture_compression/for_desktop=true
-vram_texture_compression/for_mobile=false
-html/export_icon=true
-html/custom_html_shell=""
-html/head_include=""
-html/canvas_resize_policy=2
-html/focus_canvas_on_start=true
-html/experimental_virtual_keyboard=false
-progressive_web_app/enabled=false
-progressive_web_app/offline_page=""
-progressive_web_app/display=1
-progressive_web_app/orientation=0
-progressive_web_app/icon_144x144=""
-progressive_web_app/icon_180x180=""
-progressive_web_app/icon_512x512=""
-progressive_web_app/background_color=Color(0, 0, 0, 1)
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">name="Web"
+</span><span class="z-text z-plain">platform="Web"
+</span><span class="z-text z-plain">runnable=true
+</span><span class="z-text z-plain">dedicated_server=false
+</span><span class="z-text z-plain">custom_features=""
+</span><span class="z-text z-plain">export_filter="all_resources"
+</span><span class="z-text z-plain">include_filter="*.csv"
+</span><span class="z-text z-plain">exclude_filter=""
+</span><span class="z-text z-plain">export_path="Exported_'$name'/'$name'.html"
+</span><span class="z-text z-plain">encryption_include_filters=""
+</span><span class="z-text z-plain">encryption_exclude_filters=""
+</span><span class="z-text z-plain">encrypt_pck=false
+</span><span class="z-text z-plain">encrypt_directory=false
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">[preset.0.options]
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">custom_template/debug=""
+</span><span class="z-text z-plain">custom_template/release=""
+</span><span class="z-text z-plain">variant/extensions_support=false
+</span><span class="z-text z-plain">vram_texture_compression/for_desktop=true
+</span><span class="z-text z-plain">vram_texture_compression/for_mobile=false
+</span><span class="z-text z-plain">html/export_icon=true
+</span><span class="z-text z-plain">html/custom_html_shell=""
+</span><span class="z-text z-plain">html/head_include=""
+</span><span class="z-text z-plain">html/canvas_resize_policy=2
+</span><span class="z-text z-plain">html/focus_canvas_on_start=true
+</span><span class="z-text z-plain">html/experimental_virtual_keyboard=false
+</span><span class="z-text z-plain">progressive_web_app/enabled=false
+</span><span class="z-text z-plain">progressive_web_app/offline_page=""
+</span><span class="z-text z-plain">progressive_web_app/display=1
+</span><span class="z-text z-plain">progressive_web_app/orientation=0
+</span><span class="z-text z-plain">progressive_web_app/icon_144x144=""
+</span><span class="z-text z-plain">progressive_web_app/icon_180x180=""
+</span><span class="z-text z-plain">progressive_web_app/icon_512x512=""
+</span><span class="z-text z-plain">progressive_web_app/background_color=Color(0, 0, 0, 1)
 </span></code></pre><h3 id=3-heberge-le-projet-exporte>3. Hébergé le projet exporté</h3><p>Ensuite, pour ouvrir le projet exporté vers de l’HTML5, j’ai utilisé un serveur Python pour accéder aux fichiers dans mon navigateur. Voici le code que j’ai ajouté à mon script pour créer un fichier .py afin d’avoir un serveur Python pour héberger le projet exporté :<pre class="language-bash z-code" data-lang=bash><code class=language-bash data-lang=bash><span class="z-source z-shell z-bash"><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Create a python virtual environment to install needed libs</span><span class="z-comment z-line z-number-sign z-shell">
-</span><span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">"</span>Check if python venv is installed...<span class="z-punctuation z-definition z-string z-end z-shell">"</span></span></span>
-<span class="z-keyword z-control z-conditional z-if z-shell">if</span> <span class="z-keyword z-operator z-logical z-shell">!</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">dpkg</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>l</span></span> <span class="z-keyword z-operator z-logical z-pipe z-shell">|</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">grep</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>q</span> python3-venv</span><span class="z-keyword z-operator z-logical z-continue z-shell">;</span>
-<span class="z-keyword z-control z-conditional z-then z-shell">then</span>
-	<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">"</span>Installing python venv...<span class="z-punctuation z-definition z-string z-end z-shell">"</span></span></span>
-	<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> apt install python3-venv<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>y</span></span>
-<span class="z-keyword z-control z-conditional z-end z-shell">fi</span>
-
-<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">python3</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>m</span> venv Exported_<span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">name</span></span>/venv</span>
-
-<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Installing libs in the python virtual env</span><span class="z-comment z-line z-number-sign z-shell">
-</span><span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">"</span>Creating python virtual environment...<span class="z-punctuation z-definition z-string z-end z-shell">"</span></span></span>
-<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-source z-shell">source</span></span><span class="z-meta z-function-call z-arguments z-shell"> Exported_<span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">name</span></span>/venv/bin/activate</span>
-
-<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">"</span>Installing python libs...<span class="z-punctuation z-definition z-string z-end z-shell">"</span></span></span>
-<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">python3</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>m</span> pip install Flask <span class="z-keyword z-operator z-assignment z-redirection z-shell">&></span>/dev/null</span>
-<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">python3</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>m</span> pip install requests <span class="z-keyword z-operator z-assignment z-redirection z-shell">&></span>/dev/null</span>
-
-
-<span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Create a python server to host godot</span><span class="z-comment z-line z-number-sign z-shell">
-</span><span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">"</span>Creating server to host godot...<span class="z-punctuation z-definition z-string z-end z-shell">"</span></span></span>
-
-<span class="z-variable z-other z-readwrite z-assignment z-shell">godotServer</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">"</span>from http.server import SimpleHTTPRequestHandler
-from http.server import HTTPServer
-from socketserver import ThreadingMixIn
-import os
-
-class CustomRequestHandler(SimpleHTTPRequestHandler):
-    def end_headers(self):
-        self.send_header('Access-Control-Allow-Origin', '*')
-        self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
-        self.send_header('Access-Control-Allow-Headers', 'Origin, Accept, Content-Type, X-Requested-With, X-CSRF-Token')
-        self.send_header('Cross-Origin-Embedder-Policy', 'require-corp')
-        self.send_header('Cross-Origin-Opener-Policy', 'same-origin')
-        super().end_headers()
-
-    def translate_path(self, path):
-        if path == '/':
-            return os.path.join(os.getcwd(), '<span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">name</span></span>.html')
-        return super().translate_path(path)
-
-class ThreadedHTTPServer(ThreadingMixIn, HTTPServer):
-    pass
-
-def run(server_class=ThreadedHTTPServer, handler_class=CustomRequestHandler, port=8000):
-    server_address = ('', port)
-    httpd = server_class(server_address, handler_class)
-    print(f'Starting server on port {port}...')
-    httpd.serve_forever()
-
-if __name__ == '__main__':
-    run()<span class="z-punctuation z-definition z-string z-end z-shell">"</span></span></span>
-
-<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell">-</span>e</span> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">"</span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">godotServer</span></span><span class="z-punctuation z-definition z-string z-end z-shell">"</span></span> <span class="z-keyword z-operator z-assignment z-redirection z-shell">></span> Exported_<span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">name</span></span>/godotServer.py</span>
+</span></span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">"</span>Check if python venv is installed...<span class="z-punctuation z-definition z-string z-end z-shell">"</span></span></span>
+</span><span class="z-source z-shell z-bash"><span class="z-keyword z-control z-conditional z-if z-shell">if</span> <span class="z-keyword z-operator z-logical z-shell">!</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">dpkg</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>l</span></span> <span class="z-keyword z-operator z-logical z-pipe z-shell">|</span> <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">grep</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>q</span> python3-venv</span><span class="z-keyword z-operator z-logical z-continue z-shell">;</span>
+</span><span class="z-source z-shell z-bash"><span class="z-keyword z-control z-conditional z-then z-shell">then</span>
+</span><span class="z-source z-shell z-bash">	<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">"</span>Installing python venv...<span class="z-punctuation z-definition z-string z-end z-shell">"</span></span></span>
+</span><span class="z-source z-shell z-bash">	<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">sudo</span></span><span class="z-meta z-function-call z-arguments z-shell"> apt install python3-venv<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>y</span></span>
+</span><span class="z-source z-shell z-bash"><span class="z-keyword z-control z-conditional z-end z-shell">fi</span>
+</span><span class="z-source z-shell z-bash">
+</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">python3</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>m</span> venv Exported_<span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">name</span></span>/venv</span>
+</span><span class="z-source z-shell z-bash">
+</span><span class="z-source z-shell z-bash"><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Installing libs in the python virtual env</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">"</span>Creating python virtual environment...<span class="z-punctuation z-definition z-string z-end z-shell">"</span></span></span>
+</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-support z-function z-source z-shell">source</span></span><span class="z-meta z-function-call z-arguments z-shell"> Exported_<span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">name</span></span>/venv/bin/activate</span>
+</span><span class="z-source z-shell z-bash">
+</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">"</span>Installing python libs...<span class="z-punctuation z-definition z-string z-end z-shell">"</span></span></span>
+</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">python3</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>m</span> pip install Flask <span class="z-keyword z-operator z-assignment z-redirection z-shell">&></span>/dev/null</span>
+</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">python3</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>m</span> pip install requests <span class="z-keyword z-operator z-assignment z-redirection z-shell">&></span>/dev/null</span>
+</span><span class="z-source z-shell z-bash">
+</span><span class="z-source z-shell z-bash">
+</span><span class="z-source z-shell z-bash"><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Create a python server to host godot</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">"</span>Creating server to host godot...<span class="z-punctuation z-definition z-string z-end z-shell">"</span></span></span>
+</span><span class="z-source z-shell z-bash">
+</span><span class="z-source z-shell z-bash"><span class="z-variable z-other z-readwrite z-assignment z-shell">godotServer</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">"</span>from http.server import SimpleHTTPRequestHandler
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">from http.server import HTTPServer
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">from socketserver import ThreadingMixIn
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">import os
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">class CustomRequestHandler(SimpleHTTPRequestHandler):
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">    def end_headers(self):
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">        self.send_header('Access-Control-Allow-Origin', '*')
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">        self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">        self.send_header('Access-Control-Allow-Headers', 'Origin, Accept, Content-Type, X-Requested-With, X-CSRF-Token')
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">        self.send_header('Cross-Origin-Embedder-Policy', 'require-corp')
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">        self.send_header('Cross-Origin-Opener-Policy', 'same-origin')
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">        super().end_headers()
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">    def translate_path(self, path):
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">        if path == '/':
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">            return os.path.join(os.getcwd(), '<span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">name</span></span>.html')
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">        return super().translate_path(path)
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">class ThreadedHTTPServer(ThreadingMixIn, HTTPServer):
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">    pass
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">def run(server_class=ThreadedHTTPServer, handler_class=CustomRequestHandler, port=8000):
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">    server_address = ('', port)
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">    httpd = server_class(server_address, handler_class)
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">    print(f'Starting server on port {port}...')
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">    httpd.serve_forever()
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">if __name__ == '__main__':
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">    run()<span class="z-punctuation z-definition z-string z-end z-shell">"</span></span></span>
+</span><span class="z-source z-shell z-bash">
+</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell">-</span>e</span> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">"</span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">godotServer</span></span><span class="z-punctuation z-definition z-string z-end z-shell">"</span></span> <span class="z-keyword z-operator z-assignment z-redirection z-shell">></span> Exported_<span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">name</span></span>/godotServer.py</span>
 </span></code></pre><p>Le début du code sert surtout à éviter d’installer les librairies nécessaires pour créer un serveur avec Python sur la machine hôte, mais plutôt sur un environnement virtuel.<h3 id=4-acceder-aux-ressources-externes>4. Accèder aux ressources externes</h3><p>Il y a une subtilité dans la tâche que j’ai dû réaliser : je devais créer un script pour automatiser l’exportation de projet Godot vers le web. Cependant, le projet sur lequel je devais tester mon script nécessitait un fichier CSV externe au projet.<p>La solution que j’ai adoptée pour récupérer les informations du CSV a été de l’héberger sur le dépôt GitLab du script, et d’utiliser un autre serveur Python avec les autorisations <abbr title="Cross-Origin Resource Sharing">CORS</abbr> nécessaires pour y accéder.<pre class="language-bash z-code" data-lang=bash><code class=language-bash data-lang=bash><span class="z-source z-shell z-bash"><span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> Creating a server to handle request for godot project</span><span class="z-comment z-line z-number-sign z-shell">
-</span><span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">"</span>Creating python server to make request...<span class="z-punctuation z-definition z-string z-end z-shell">"</span></span></span>
-
-<span class="z-variable z-other z-readwrite z-assignment z-shell">requestServer</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">"</span>from flask import Flask, request, jsonify, send_from_directory
-import requests
-
-app = Flask(__name__)
-
-@app.route('/proxy', methods=['GET'])
-def proxy():
-    # Récupérez l'URL de la demande client
-    url = request.args.get('url')
-
-    # Faites une requête HTTP vers Gitlab
-    response = requests.get(url)
-
-    # Renvoyez la réponse du serveur Gitlab avec les en-têtes CORS appropriés
-    response_headers = {
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
-        'Access-Control-Allow-Headers': 'Origin, Accept, Content-Type, X-Requested-With, X-CSRF-Token',
-        'Cross-Origin-Embedder-Policy': 'require-corp',
-        'Cross-Origin-Opener-Policy': 'same-origin'
-    }
-
-    return (response.text, response.status_code, response_headers)
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)<span class="z-punctuation z-definition z-string z-end z-shell">"</span></span></span>
-
-<span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell">-</span>e</span> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">"</span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">requestServer</span></span><span class="z-punctuation z-definition z-string z-end z-shell">"</span></span> <span class="z-keyword z-operator z-assignment z-redirection z-shell">></span> Exported_<span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">name</span></span>/proxy_server.py</span>
+</span></span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">"</span>Creating python server to make request...<span class="z-punctuation z-definition z-string z-end z-shell">"</span></span></span>
+</span><span class="z-source z-shell z-bash">
+</span><span class="z-source z-shell z-bash"><span class="z-variable z-other z-readwrite z-assignment z-shell">requestServer</span><span class="z-keyword z-operator z-assignment z-shell">=</span><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">"</span>from flask import Flask, request, jsonify, send_from_directory
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">import requests
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">app = Flask(__name__)
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">@app.route('/proxy', methods=['GET'])
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">def proxy():
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">    # Récupérez l'URL de la demande client
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">    url = request.args.get('url')
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">    # Faites une requête HTTP vers Gitlab
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">    response = requests.get(url)
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">    # Renvoyez la réponse du serveur Gitlab avec les en-têtes CORS appropriés
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">    response_headers = {
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">        'Access-Control-Allow-Origin': '*',
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">        'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">        'Access-Control-Allow-Headers': 'Origin, Accept, Content-Type, X-Requested-With, X-CSRF-Token',
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">        'Cross-Origin-Embedder-Policy': 'require-corp',
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">        'Cross-Origin-Opener-Policy': 'same-origin'
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">    }
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">    return (response.text, response.status_code, response_headers)
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">if __name__ == '__main__':
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-string z-unquoted z-shell"><span class="z-string z-quoted z-double z-shell">    app.run(host='0.0.0.0', port=8080)<span class="z-punctuation z-definition z-string z-end z-shell">"</span></span></span>
+</span><span class="z-source z-shell z-bash">
+</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-support z-function z-echo z-shell">echo</span></span><span class="z-meta z-function-call z-arguments z-shell"> <span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell">-</span>e</span> <span class="z-string z-quoted z-double z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">"</span><span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">requestServer</span></span><span class="z-punctuation z-definition z-string z-end z-shell">"</span></span> <span class="z-keyword z-operator z-assignment z-redirection z-shell">></span> Exported_<span class="z-meta z-group z-expansion z-parameter z-shell"><span class="z-punctuation z-definition z-variable z-shell">$</span><span class="z-variable z-other z-readwrite z-shell">name</span></span>/proxy_server.py</span>
 </span></code></pre><details><summary>Voir le script en entier</summary> <pre class=z-code><code><span class="z-text z-plain">#!/bin/bash
-
-</span>scriptUsage () {
-<span>	echo -e "Usage: $0 &LTgodot_path> &LTexport_preset>
-</span>	Examples :
-<span>		$0 godot Web
-</span>		$0 /bin/godot Web
-<span>		$0 Godot_v4.2.1.stable Web"
-</span>}
-
-<span>godot=$1
-
-</span>if [[ $godot == "" ]];
-<span>then
-</span>	scriptUsage
-<span>	exit 1
-</span>fi
-
-
-<span>preset=$2
-
-</span>if [[ $preset == "" ]];
-<span>then
-</span>	scriptUsage
-<span>	exit 2
-</span>fi
-
-
-<span>name=$(pwd | rev | cut -d'/' -f1 | rev)
-
-
-</span>version=$($godot --version | cut -d "." -f 1,2,3,4 | sed 's/\.official//')
-
-<span>if [[ $version == "" ]];
-</span>then
-<span>	echo "Wrong godot path!"
-</span>	exit 5
-<span>fi
-
-
-</span># Export preset to HTML5 (Web)
-<span>echo "Setup export preset..."
-
-</span>presetCfg='[preset.0]
-
-<span>name="Web"
-</span>platform="Web"
-<span>runnable=true
-</span>dedicated_server=false
-<span>custom_features=""
-</span>export_filter="all_resources"
-<span>include_filter="*.csv"
-</span>exclude_filter=""
-<span>export_path="Exported_'$name'/'$name'.html"
-</span>encryption_include_filters=""
-<span>encryption_exclude_filters=""
-</span>encrypt_pck=false
-<span>encrypt_directory=false
-
-</span>[preset.0.options]
-
-<span>custom_template/debug=""
-</span>custom_template/release=""
-<span>variant/extensions_support=false
-</span>vram_texture_compression/for_desktop=true
-<span>vram_texture_compression/for_mobile=false
-</span>html/export_icon=true
-<span>html/custom_html_shell=""
-</span>html/head_include=""
-<span>html/canvas_resize_policy=2
-</span>html/focus_canvas_on_start=true
-<span>html/experimental_virtual_keyboard=false
-</span>progressive_web_app/enabled=false
-<span>progressive_web_app/offline_page=""
-</span>progressive_web_app/display=1
-<span>progressive_web_app/orientation=0
-</span>progressive_web_app/icon_144x144=""
-<span>progressive_web_app/icon_180x180=""
-</span>progressive_web_app/icon_512x512=""
-<span>progressive_web_app/background_color=Color(0, 0, 0, 1)'
-
-</span>echo -e "$presetCfg" > export_presets.cfg
-
-
-<span># Check if there are already export templates
-</span>echo "Check if there are export templates..."
-
-<span>mkdir -p ~/.local/share/godot/export_templates/$version
-
-</span>exportTpl=$(ls ~/.local/share/godot/export_templates/$version)
-
-<span>linkVersion=$(echo $version | grep -oP '(\d+(\.\d+)+)')
-
-
-</span># Download export templates if there aren't already downloaded
-<span>if [[ $exportTpl == "" ]];
-</span>then
-<span>	echo "Export templates not found..."
-</span>	echo "Downloading export templates..."
-<span>	wget -q https://github.com/godotengine/godot/releases/download/$linkVersion-stable/Godot_v$linkVersion-stable_export_templates.tpz
-</span>	unzip -qq Godot_v$linkVersion-stable_export_templates.tpz
-<span>	mv templates/* ~/.local/share/godot/export_templates/$version
-</span>	rm -r templates
-<span>	rm Godot_v$linkVersion-stable_export_templates.tpz
-</span>else
-<span>	echo "Export templates found..."
-</span>fi
-
-<span>mkdir -p Exported_$name
-
-</span>echo "Exporting godot project..."
-<span>$godot --headless --export-release $preset Exported_$name/$name.html &>/dev/null
-
-
-</span># Create a python virtual environment to install needed libs
-<span>echo "Check if python venv is installed..."
-</span>if ! dpkg -l | grep -q python3-venv;
-<span>then
-</span>	echo "Installing python venv..."
-<span>	sudo apt install python3-venv -y
-</span>fi
-
-<span>python3 -m venv Exported_$name/venv
-
-</span># Installing libs in the python virtual env
-<span>echo "Creating python virtual environment..."
-</span>source Exported_$name/venv/bin/activate
-
-<span>echo "Installing python libs..."
-</span>python3 -m pip install Flask &>/dev/null
-<span>python3 -m pip install requests &>/dev/null
-
-
-</span># Create a python server to host godot
-<span>echo "Creating server to host godot..."
-
-</span>godotServer="from http.server import SimpleHTTPRequestHandler
-<span>from http.server import HTTPServer
-</span>from socketserver import ThreadingMixIn
-<span>import os
-
-</span>class CustomRequestHandler(SimpleHTTPRequestHandler):
-<span>    def end_headers(self):
-</span>        self.send_header('Access-Control-Allow-Origin', '*')
-<span>        self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
-</span>        self.send_header('Access-Control-Allow-Headers', 'Origin, Accept, Content-Type, X-Requested-With, X-CSRF-Token')
-<span>        self.send_header('Cross-Origin-Embedder-Policy', 'require-corp')
-</span>        self.send_header('Cross-Origin-Opener-Policy', 'same-origin')
-<span>        super().end_headers()
-
-</span>    def translate_path(self, path):
-<span>        if path == '/':
-</span>            return os.path.join(os.getcwd(), '$name.html')
-<span>        return super().translate_path(path)
-
-</span>class ThreadedHTTPServer(ThreadingMixIn, HTTPServer):
-<span>    pass
-
-</span>def run(server_class=ThreadedHTTPServer, handler_class=CustomRequestHandler, port=8000):
-<span>    server_address = ('', port)
-</span>    httpd = server_class(server_address, handler_class)
-<span>    print(f'Starting server on port {port}...')
-</span>    httpd.serve_forever()
-
-<span>if __name__ == '__main__':
-</span>    run()"
-
-<span>echo -e "$godotServer" > Exported_$name/godotServer.py
-
-
-</span># Creating a server to handle request for godot project
-<span>echo "Creating python server to make request..."
-
-</span>requestServer="from flask import Flask, request, jsonify, send_from_directory
-<span>import requests
-
-</span>app = Flask(__name__)
-
-<span>@app.route('/proxy', methods=['GET'])
-</span>def proxy():
-<span>    # Récupérez l'URL de la demande client
-</span>    url = request.args.get('url')
-
-<span>    # Faites une requête HTTP vers Gitlab
-</span>    response = requests.get(url)
-
-<span>    # Renvoyez la réponse du serveur Gitlab avec les en-têtes CORS appropriés
-</span>    response_headers = {
-<span>        'Access-Control-Allow-Origin': '*',
-</span>        'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
-<span>        'Access-Control-Allow-Headers': 'Origin, Accept, Content-Type, X-Requested-With, X-CSRF-Token',
-</span>        'Cross-Origin-Embedder-Policy': 'require-corp',
-<span>        'Cross-Origin-Opener-Policy': 'same-origin'
-</span>    }
-
-<span>    return (response.text, response.status_code, response_headers)
-
-</span>if __name__ == '__main__':
-<span>    app.run(host='0.0.0.0', port=8080)"
-
-</span>echo -e "$requestServer" > Exported_$name/proxy_server.py
-
-<span>exit 0
-</span></code></pre></details><section class=task-nav><a href=/stage> <div><span class=previous>← </span><span class=label>Toutes les tâches</span></div> </a><a href=/stage/graphique-3d-formations> <div><span class=label>Deuxième tâche</span><span class=next>→</span></div> </a></section></div><footer id=site-footer><p>© Anaël Lasserre, 2024<ul id=socials><li><a rel=" me" href=https://github.com/voluxyy title=GitHub> <i style="mask-image: url(&#34data:image/svg+xml,%3Csvg role='img' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EGitHub%3C/title%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E&#34); -webkit-mask-image: url(&#34data:image/svg+xml,%3Csvg role='img' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EGitHub%3C/title%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E&#34)" class=icon></i> <span>GitHub</span> </a><li><a rel=" me" href=https://www.linkedin.com/in/ana%C3%ABl-lasserre-33a706265 title=Linkedin> <i style='mask-image: url("data:image/svg+xml,"); -webkit-mask-image: url("data:image/svg+xml,")' class=icon></i> <span>Linkedin</span> </a></ul></footer>
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">scriptUsage () {
+</span><span class="z-text z-plain">	echo -e "Usage: $0 &LTgodot_path> &LTexport_preset>
+</span><span class="z-text z-plain">	Examples :
+</span><span class="z-text z-plain">		$0 godot Web
+</span><span class="z-text z-plain">		$0 /bin/godot Web
+</span><span class="z-text z-plain">		$0 Godot_v4.2.1.stable Web"
+</span><span class="z-text z-plain">}
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">godot=$1
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">if [[ $godot == "" ]];
+</span><span class="z-text z-plain">then
+</span><span class="z-text z-plain">	scriptUsage
+</span><span class="z-text z-plain">	exit 1
+</span><span class="z-text z-plain">fi
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">preset=$2
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">if [[ $preset == "" ]];
+</span><span class="z-text z-plain">then
+</span><span class="z-text z-plain">	scriptUsage
+</span><span class="z-text z-plain">	exit 2
+</span><span class="z-text z-plain">fi
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">name=$(pwd | rev | cut -d'/' -f1 | rev)
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">version=$($godot --version | cut -d "." -f 1,2,3,4 | sed 's/\.official//')
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">if [[ $version == "" ]];
+</span><span class="z-text z-plain">then
+</span><span class="z-text z-plain">	echo "Wrong godot path!"
+</span><span class="z-text z-plain">	exit 5
+</span><span class="z-text z-plain">fi
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain"># Export preset to HTML5 (Web)
+</span><span class="z-text z-plain">echo "Setup export preset..."
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">presetCfg='[preset.0]
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">name="Web"
+</span><span class="z-text z-plain">platform="Web"
+</span><span class="z-text z-plain">runnable=true
+</span><span class="z-text z-plain">dedicated_server=false
+</span><span class="z-text z-plain">custom_features=""
+</span><span class="z-text z-plain">export_filter="all_resources"
+</span><span class="z-text z-plain">include_filter="*.csv"
+</span><span class="z-text z-plain">exclude_filter=""
+</span><span class="z-text z-plain">export_path="Exported_'$name'/'$name'.html"
+</span><span class="z-text z-plain">encryption_include_filters=""
+</span><span class="z-text z-plain">encryption_exclude_filters=""
+</span><span class="z-text z-plain">encrypt_pck=false
+</span><span class="z-text z-plain">encrypt_directory=false
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">[preset.0.options]
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">custom_template/debug=""
+</span><span class="z-text z-plain">custom_template/release=""
+</span><span class="z-text z-plain">variant/extensions_support=false
+</span><span class="z-text z-plain">vram_texture_compression/for_desktop=true
+</span><span class="z-text z-plain">vram_texture_compression/for_mobile=false
+</span><span class="z-text z-plain">html/export_icon=true
+</span><span class="z-text z-plain">html/custom_html_shell=""
+</span><span class="z-text z-plain">html/head_include=""
+</span><span class="z-text z-plain">html/canvas_resize_policy=2
+</span><span class="z-text z-plain">html/focus_canvas_on_start=true
+</span><span class="z-text z-plain">html/experimental_virtual_keyboard=false
+</span><span class="z-text z-plain">progressive_web_app/enabled=false
+</span><span class="z-text z-plain">progressive_web_app/offline_page=""
+</span><span class="z-text z-plain">progressive_web_app/display=1
+</span><span class="z-text z-plain">progressive_web_app/orientation=0
+</span><span class="z-text z-plain">progressive_web_app/icon_144x144=""
+</span><span class="z-text z-plain">progressive_web_app/icon_180x180=""
+</span><span class="z-text z-plain">progressive_web_app/icon_512x512=""
+</span><span class="z-text z-plain">progressive_web_app/background_color=Color(0, 0, 0, 1)'
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">echo -e "$presetCfg" > export_presets.cfg
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain"># Check if there are already export templates
+</span><span class="z-text z-plain">echo "Check if there are export templates..."
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">mkdir -p ~/.local/share/godot/export_templates/$version
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">exportTpl=$(ls ~/.local/share/godot/export_templates/$version)
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">linkVersion=$(echo $version | grep -oP '(\d+(\.\d+)+)')
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain"># Download export templates if there aren't already downloaded
+</span><span class="z-text z-plain">if [[ $exportTpl == "" ]];
+</span><span class="z-text z-plain">then
+</span><span class="z-text z-plain">	echo "Export templates not found..."
+</span><span class="z-text z-plain">	echo "Downloading export templates..."
+</span><span class="z-text z-plain">	wget -q https://github.com/godotengine/godot/releases/download/$linkVersion-stable/Godot_v$linkVersion-stable_export_templates.tpz
+</span><span class="z-text z-plain">	unzip -qq Godot_v$linkVersion-stable_export_templates.tpz
+</span><span class="z-text z-plain">	mv templates/* ~/.local/share/godot/export_templates/$version
+</span><span class="z-text z-plain">	rm -r templates
+</span><span class="z-text z-plain">	rm Godot_v$linkVersion-stable_export_templates.tpz
+</span><span class="z-text z-plain">else
+</span><span class="z-text z-plain">	echo "Export templates found..."
+</span><span class="z-text z-plain">fi
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">mkdir -p Exported_$name
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">echo "Exporting godot project..."
+</span><span class="z-text z-plain">$godot --headless --export-release $preset Exported_$name/$name.html &>/dev/null
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain"># Create a python virtual environment to install needed libs
+</span><span class="z-text z-plain">echo "Check if python venv is installed..."
+</span><span class="z-text z-plain">if ! dpkg -l | grep -q python3-venv;
+</span><span class="z-text z-plain">then
+</span><span class="z-text z-plain">	echo "Installing python venv..."
+</span><span class="z-text z-plain">	sudo apt install python3-venv -y
+</span><span class="z-text z-plain">fi
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">python3 -m venv Exported_$name/venv
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain"># Installing libs in the python virtual env
+</span><span class="z-text z-plain">echo "Creating python virtual environment..."
+</span><span class="z-text z-plain">source Exported_$name/venv/bin/activate
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">echo "Installing python libs..."
+</span><span class="z-text z-plain">python3 -m pip install Flask &>/dev/null
+</span><span class="z-text z-plain">python3 -m pip install requests &>/dev/null
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain"># Create a python server to host godot
+</span><span class="z-text z-plain">echo "Creating server to host godot..."
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">godotServer="from http.server import SimpleHTTPRequestHandler
+</span><span class="z-text z-plain">from http.server import HTTPServer
+</span><span class="z-text z-plain">from socketserver import ThreadingMixIn
+</span><span class="z-text z-plain">import os
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">class CustomRequestHandler(SimpleHTTPRequestHandler):
+</span><span class="z-text z-plain">    def end_headers(self):
+</span><span class="z-text z-plain">        self.send_header('Access-Control-Allow-Origin', '*')
+</span><span class="z-text z-plain">        self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
+</span><span class="z-text z-plain">        self.send_header('Access-Control-Allow-Headers', 'Origin, Accept, Content-Type, X-Requested-With, X-CSRF-Token')
+</span><span class="z-text z-plain">        self.send_header('Cross-Origin-Embedder-Policy', 'require-corp')
+</span><span class="z-text z-plain">        self.send_header('Cross-Origin-Opener-Policy', 'same-origin')
+</span><span class="z-text z-plain">        super().end_headers()
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">    def translate_path(self, path):
+</span><span class="z-text z-plain">        if path == '/':
+</span><span class="z-text z-plain">            return os.path.join(os.getcwd(), '$name.html')
+</span><span class="z-text z-plain">        return super().translate_path(path)
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">class ThreadedHTTPServer(ThreadingMixIn, HTTPServer):
+</span><span class="z-text z-plain">    pass
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">def run(server_class=ThreadedHTTPServer, handler_class=CustomRequestHandler, port=8000):
+</span><span class="z-text z-plain">    server_address = ('', port)
+</span><span class="z-text z-plain">    httpd = server_class(server_address, handler_class)
+</span><span class="z-text z-plain">    print(f'Starting server on port {port}...')
+</span><span class="z-text z-plain">    httpd.serve_forever()
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">if __name__ == '__main__':
+</span><span class="z-text z-plain">    run()"
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">echo -e "$godotServer" > Exported_$name/godotServer.py
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain"># Creating a server to handle request for godot project
+</span><span class="z-text z-plain">echo "Creating python server to make request..."
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">requestServer="from flask import Flask, request, jsonify, send_from_directory
+</span><span class="z-text z-plain">import requests
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">app = Flask(__name__)
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">@app.route('/proxy', methods=['GET'])
+</span><span class="z-text z-plain">def proxy():
+</span><span class="z-text z-plain">    # Récupérez l'URL de la demande client
+</span><span class="z-text z-plain">    url = request.args.get('url')
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">    # Faites une requête HTTP vers Gitlab
+</span><span class="z-text z-plain">    response = requests.get(url)
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">    # Renvoyez la réponse du serveur Gitlab avec les en-têtes CORS appropriés
+</span><span class="z-text z-plain">    response_headers = {
+</span><span class="z-text z-plain">        'Access-Control-Allow-Origin': '*',
+</span><span class="z-text z-plain">        'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+</span><span class="z-text z-plain">        'Access-Control-Allow-Headers': 'Origin, Accept, Content-Type, X-Requested-With, X-CSRF-Token',
+</span><span class="z-text z-plain">        'Cross-Origin-Embedder-Policy': 'require-corp',
+</span><span class="z-text z-plain">        'Cross-Origin-Opener-Policy': 'same-origin'
+</span><span class="z-text z-plain">    }
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">    return (response.text, response.status_code, response_headers)
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">if __name__ == '__main__':
+</span><span class="z-text z-plain">    app.run(host='0.0.0.0', port=8080)"
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">echo -e "$requestServer" > Exported_$name/proxy_server.py
+</span><span class="z-text z-plain">
+</span><span class="z-text z-plain">exit 0
+</span></code></pre></details><section class=task-nav><a href=/stage> <div><span class=previous>← </span><span class=label>Toutes les tâches</span></div> </a><a href=/stage/graphique-3d-formations> <div><span class=label>Deuxième tâche</span><span class=next>→</span></div> </a></section></div><footer id=site-footer><p>© Anaël Lasserre, 2024<ul id=socials><li><a rel=" me" href=https://github.com/voluxyy title=GitHub> <i style="-webkit-mask-image:url(&#34data:image/svg+xml,%3Csvg role='img' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EGitHub%3C/title%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E&#34);mask-image:url(&#34data:image/svg+xml,%3Csvg role='img' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Ctitle%3EGitHub%3C/title%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E&#34)" class=icon></i> <span>GitHub</span> </a><li><a rel=" me" href=https://www.linkedin.com/in/ana%C3%ABl-lasserre-33a706265 title=Linkedin> <i class=icon style=-webkit-mask-image:url(data:image/svg+xml,);mask-image:url(data:image/svg+xml,)></i> <span>Linkedin</span> </a></ul></footer>
