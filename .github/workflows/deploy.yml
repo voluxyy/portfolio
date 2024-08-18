@@ -22,12 +22,6 @@ jobs:
     - name: Build the site
       run: zola build
 
-    - name: Show generated files
-      run: ls -R public
-
-    - name: Show the content of style.css
-      run: cat public/style.css
-
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
